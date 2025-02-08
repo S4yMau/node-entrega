@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
 import {productosM} from "./productosM.js"
+import { v4 as uuidv4 } from "uuid"
 
 class CarritoM {
     constructor(path) {
@@ -22,7 +23,7 @@ class CarritoM {
     async  crearCarrito() {
         try {
             const carrito = {
-                id: "a1",
+                id: uuidv4(),
                 productos:[]
             }
             const carritosArchivo = await this.obtenerTodoCarrito()
@@ -43,7 +44,7 @@ class CarritoM {
     }
     async guardarProductoEnCarrito(idCarrito,Idproducto){
         try {
-            const productoExistente = await productosM.ObtenerId(Idproducto)
+            const productoExistente = await productosM.obtenerId(Idproducto)
             if (!productoExistente) {
                 throw new Error("El producto no existe")
             }

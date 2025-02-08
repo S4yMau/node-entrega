@@ -4,7 +4,12 @@ const router = Router()
 router.get("/",async(req,res)=>{
     try {
         const productos = await productosM.obetenerTodo()
-        res.status(200).json(productos)
+        const query = req.query
+        if (query.limit) {
+            return res.send({mensaje:"Solicitud exitosa", resultado: productos.slice(query.limit)})
+        } else {
+            res.status(200).json(producto)
+        }
     } catch (error) {
         res.status(500).json({menssage: error.menssage})
     }
@@ -20,8 +25,12 @@ router.get("/:id", async (req,res)=>{
 })
 router.post("/",async(req,res)=> {
     try {
+        console.log(req.body);
+
         const producto = await productosM.crear(req.body)
+                console.log(producto);
         res.status(201).json(producto)
+
     } catch (error) {
         res.status(500).json({mensaje: error.mensaje})
     }
@@ -43,7 +52,7 @@ router.delete("/:id",async(req,res)=>{
         res.status(500).json({mensaje: error.mensaje})
     }
 })
-router.put("/:id"),async(req,res)=>{
+router.put("/:id",async(req,res)=>{
     try {
         const {id} = req.params
         const productoActualizar= await productosM.actualizar(req.body, id)
@@ -51,5 +60,5 @@ router.put("/:id"),async(req,res)=>{
     } catch (error) {
         res.status(500).json({mensaje: error.mensaje})
     }
-}
+})
 export default router

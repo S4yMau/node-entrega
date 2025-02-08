@@ -1,11 +1,13 @@
 import fs from "node:fs"
 import path from "path"
+import { v4 as uuidv4 } from "uuid"
 class ProductosM{
     constructor(path){
         this.path = path
     }
     async obetenerTodo(){
         try {
+            
             if (fs.existsSync(this.path)) {
                 const productos = await fs.promises.readFile(this.path, "utf-8")
                 return JSON.parse(productos)
@@ -18,10 +20,14 @@ class ProductosM{
     }
     async crear (objeto){
         try {
+            console.log(this.path);
             const producto = {
-                id: a1,
+                id: uuidv4(),
+                status: true,
                 ...objeto,
             }
+            console.log(producto);
+            
             const productos = await this.obetenerTodo()
             productos.push(producto)
             await fs.promises.writeFile(this.path, JSON.stringify(productos))
@@ -57,7 +63,7 @@ class ProductosM{
     }
     async borrar (id){
         try {
-            const producto = await this.obtenerId()
+            const producto = await this.obtenerId(id)
             const productos = await this.obetenerTodo()
             const array = productos.filter ((producto)=> producto.id ==id)
             await fs.promises.writeFile(this.path,JSON.stringify(array))

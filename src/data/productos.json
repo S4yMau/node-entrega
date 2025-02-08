@@ -1,0 +1,6 @@
+[{"nombre":"kevin","descripcion":"Perfume nacional muy clasico","codigo":"21431","stock":124,"precio":10000,"categoria":"nacional","img":"imgs/kevin.jpeg"},
+{"nombre":"bad boy","descripcion":"Perfume importado apimentado","codigo":"21432","stock":12,"precio":100000,"categoria":"importado","img":"imgs/badBoy.webp"},
+{"nombre":"colbert","descripcion":"Perfume nacional con aroma a pino","codigo":"21433","stock":120,"precio":9000,"categoria":"nacional","img":"imgs/colbert.jpg"},
+{"nombre":"chester ice","descripcion":"Perfume nacional con aroma fresco","codigo":"21434","stock":129,"precio":8000,"categoria":"nacional","img":"imgs/chesterIce.png"},
+{"nombre":"one million","descripcion":"Perfume importado amaderado","codigo":"21435","stock":2,"precio":120000,"categoria":"importado","img":"imgs/oneMillion.webp"}
+]
