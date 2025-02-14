@@ -1,0 +1,33 @@
+<h1>Productos Tiempo real</h1>
+
+<div id="container" class="flex">
+
+</div>
+<form >
+    <h2>Crear producto</h2>
+    <input type="text" placeholder="Nombre" id="nombre-crear">
+    <input type="text" placeholder="Descripcion" id="descripcion-crear">
+    <input type="text" placeholder="Codigo" id="codigo-crear">
+    <input type="number" placeholder="Stock" id="stock-crear">
+    <input type="number" placeholder="Precio" id="precio-crear">
+    <input type="text" placeholder="Categoria" id="categoria-crear">
+    <button  id="submit-crear">Crear producto</button>
+</form>
+<form >
+    <h2>Editar producto</h2>
+    <input type="text" placeholder="ID a editar" id="id-editar">
+    <input type="text" placeholder="Nombre" id="nombre-editar">
+    <input type="text" placeholder="Descripcion" id="descripcion-editar">
+    <input type="text" placeholder="Codigo" id="codigo-editar">
+    <input type="number" placeholder="Stock" id="stock-editar">
+    <input type="number" placeholder="Precio" id="precio-editar">
+    <input type="text" placeholder="Categoria" id="categoria-editar">
+    <button  id="submit-editar">Editar producto</button>
+</form>
+<form >
+    <h2>Borrar producto</h2>
+    <input type="text" placeholder="ID para borrar" id="id-borrar">
+    <button  id="submit-borrar">Borrar producto</button>
+</form>
+<script src="/socket.io/socket.io.js"></script>
+<script src="socket.js"></script>

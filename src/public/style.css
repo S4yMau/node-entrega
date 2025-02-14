@@ -1,0 +1,15 @@
+h1{
+    font-size: 10rem;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.flex div{
+    background-color: chocolate;
+    border-radius: 10px;
+    padding: 20px;
+}

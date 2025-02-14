@@ -1,6 +1,1 @@
-[{"nombre":"kevin","descripcion":"Perfume nacional muy clasico","codigo":"21431","stock":124,"precio":10000,"categoria":"nacional","img":"imgs/kevin.jpeg"},
-{"nombre":"bad boy","descripcion":"Perfume importado apimentado","codigo":"21432","stock":12,"precio":100000,"categoria":"importado","img":"imgs/badBoy.webp"},
-{"nombre":"colbert","descripcion":"Perfume nacional con aroma a pino","codigo":"21433","stock":120,"precio":9000,"categoria":"nacional","img":"imgs/colbert.jpg"},
-{"nombre":"chester ice","descripcion":"Perfume nacional con aroma fresco","codigo":"21434","stock":129,"precio":8000,"categoria":"nacional","img":"imgs/chesterIce.png"},
-{"nombre":"one million","descripcion":"Perfume importado amaderado","codigo":"21435","stock":2,"precio":120000,"categoria":"importado","img":"imgs/oneMillion.webp"}
-]
+[{"id":"3c41011d-3230-4497-89af-96d818f82cf9","status":true,"nombre":"KENZO","descripcion":"PERFUME FRESCO","codigo":"123123","stock":"123","precio":"1231","categoria":"12321"},{"id":"a3366a61-9664-491e-9206-f3ffbc73e83d","status":true,"nombre":"Kevin Absolute","descripcion":"Perfume Moderno","codigo":"9896","stock":"100","precio":"12000","categoria":"Nacional"}]

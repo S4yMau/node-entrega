@@ -1,0 +1,10 @@
+<h1>Productos hanldebars</h1>
+<div class="flex">
+        {{#each productos}}
+            <div>
+                <h2>{{this.nombre}}</h2>
+                <p>{{this.precio}}</p>
+                <button>Ver detalles</button>
+            </div>
+        {{/each}}
+</div>
